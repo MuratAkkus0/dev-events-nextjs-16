@@ -35,14 +35,14 @@ export default function RootLayout({
         <div className="h-16"></div>
         <div
           scroll-behavior="smooth"
-          className="h-min-scren w-full absolute inset-0 top-0 z-[-1]"
+          className="min-h-min-scren w-full absolute inset-0 top-0 z-[-1]"
         >
           <LightRays
             raysOrigin="top-center-offset"
             raysColor="#5dfeca"
             raysSpeed={0.5}
-            lightSpread={0.5}
-            rayLength={10.4}
+            lightSpread={0.9}
+            rayLength={5.4}
             followMouse={true}
             mouseInfluence={0.02}
             noiseAmount={0.0}
