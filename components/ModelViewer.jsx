@@ -432,7 +432,7 @@ const ModelViewer = ({
     <div
       style={{
         width: "100%",
-
+        maxWidth: 600,
         height: 400,
 
         touchAction: "pan-y pinch-zoom",
