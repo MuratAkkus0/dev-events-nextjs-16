@@ -35,7 +35,7 @@ export default function RootLayout({
         <div className="h-16"></div>
         <div
           scroll-behavior="smooth"
-          className="min-h-min-scren w-full fixed inset-0 top-0 z-[-1]"
+          className="min-h-min-scren w-full absolute inset-0 top-0 z-[-1]"
         >
           <LightRays
             raysOrigin="top-center-offset"

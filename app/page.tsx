@@ -6,9 +6,6 @@ import { url } from "inspector";
 export default async function Home() {
   return (
     <>
-      <section className="container mx-auto flex justify-center items-center select-none">
-        {}
-      </section>
       <section className="container mx-auto min-h-screen max-h-svh max-sm:px-4 grid grid-rows-12 items-center">
         <div className="row-span-8">
           <div className="w-full h-fit flex justify-center">
@@ -29,19 +26,21 @@ export default async function Home() {
         </div>
       </section>
       <div id="events"></div>
-      <section className="min-h-screen container max-sm:px-4 mx-auto">
-        <div className="mt-20 space-y-7">
-          <h3>Featured Events</h3>
+      <section className="bg-black/50 p-4 rounded-xl">
+        <div className="min-h-screen container max-sm:px-4 mx-auto">
+          <div className="mt-20 space-y-7">
+            <h3>Featured Events</h3>
 
-          <ul className="events">
-            {events &&
-              events.length > 0 &&
-              events.map((event) => (
-                <li key={event.title} className="list-none">
-                  <EventCard {...event} />
-                </li>
-              ))}
-          </ul>
+            <ul className="events">
+              {events &&
+                events.length > 0 &&
+                events.map((event) => (
+                  <li key={event.title} className="list-none">
+                    <EventCard {...event} />
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </section>
       <div className="h-16"></div>
