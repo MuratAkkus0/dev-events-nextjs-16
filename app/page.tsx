@@ -1,12 +1,24 @@
 import ExploreButton from "@/components/ExploreButton";
 import { events } from "@/lib/constants";
 import EventCard from "@/components/EventCard";
-
+import ModelViewer from "@/components/ModelViewer";
+import { url } from "inspector";
 export default async function Home() {
   return (
     <>
-      <section className="container mx-auto min-h-screen max-sm:px-4 grid grid-rows-12 items-center">
+      <section className="container mx-auto flex justify-center items-center select-none">
+        {}
+      </section>
+      <section className="container mx-auto min-h-screen max-h-svh max-sm:px-4 grid grid-rows-12 items-center">
         <div className="row-span-8">
+          <div className="w-full h-fit flex justify-center">
+            {/* @ts-ignore */}
+            <ModelViewer
+              url="/ToyCar.glb"
+              defaultZoom={1}
+              showScreenshotButton={false}
+            />
+          </div>
           <h1 className="text-center xl:text-8xl">
             The Hub for Every Dev <br /> Event You Can't Miss
           </h1>
